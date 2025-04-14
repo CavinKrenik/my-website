@@ -1,0 +1,10 @@
+/* Set the background color of the entire page to black and text color to white */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Correcting the existing rule for paragraphs */
+p {
+    background-color: aqua; /* Optional: Keep or remove this if not needed */
+}
