@@ -1,2 +1,5 @@
 # my-website
-Color your chaos website for working through your trauma and adding some color to your life yes
+Color your chaos website for working through trauma
+* Added image
+* Updates CSS
+* Added text
