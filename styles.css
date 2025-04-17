@@ -1,9 +1,11 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #047791, #96c93d, #f39c12, #8e44ad, #051119);
-    background-size: 800%;
-    animation: colorShift 20s ease infinite;
+    background: linear-gradient(45deg, 
+        #ff6b6b, #4ecdc4, #047791, #96c93d, #f39c12, #8e44ad, #051119, 
+        #ff5733, #33ff57, #3357ff, #ff33a8, #a833ff, #33fff5, #f5ff33);
+    background-size: 1400%; /* Increased size to accommodate more colors */
+    animation: colorShift 25s ease infinite; /* Adjusted duration for smoother transitions */
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
