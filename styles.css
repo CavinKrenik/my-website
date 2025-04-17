@@ -1,11 +1,17 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle, 
-        #360172, #4ecdc4, #010e11, #96c93d, #f39c12, #8e44ad, #f92e01, 
-        #33ff57, #3357ff, #ff33a8, #a833ff, #33fff5, #f5ff33);
-    background-size: 300% 300%;
-    animation: lavaLampEffect 20s ease-in-out infinite;
+    background: repeating-radial-gradient(
+        circle,
+        #360172 0%,
+        #4ecdc4 10%,
+        #010e11 20%,
+        #96c93d 30%,
+        #f39c12 40%,
+        #8e44ad 50%
+    );
+    background-size: 200% 200%; /* Enlarged for animation */
+    animation: spiralEffect 10s linear infinite; /* Smooth spiral animation */
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -28,20 +34,13 @@ p {
     margin: 0.5em 0;
 }
 
-@keyframes lavaLampEffect {
+@keyframes spiralEffect {
     0% {
-        background-position: 0% 0%;
-    }
-    25% {
         background-position: 50% 50%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    75% {
-        background-position: 50% 0%;
+        transform: rotate(0deg);
     }
     100% {
-        background-position: 0% 100%;
+        background-position: 50% 50%;
+        transform: rotate(360deg);
     }
 }
