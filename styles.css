@@ -1,9 +1,9 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d, #f39c12, #8e44ad, #3498db);
-    background-size: 800%; /* Adjusted to accommodate more colors */
-    animation: colorShift 20s ease infinite; /* Slightly increased duration for smoother transitions */
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #047791, #96c93d, #f39c12, #8e44ad, #051119);
+    background-size: 800%;
+    animation: colorShift 20s ease infinite;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
