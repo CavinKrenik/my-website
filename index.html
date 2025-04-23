@@ -9,92 +9,101 @@
         content="Color Your Chaos helps you turn disorder into harmony. Tips, tools, and resources for organizing life’s messes." />
     <meta name="keywords" content="chaos, organization, tips, tools, mindfulness, healing, mental health" />
     <title>Color Your Chaos</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('cyca.png') no-repeat center center fixed;
-            /* Set cyca.png as the background */
-            background-size: cover;
-            /* Ensure the image covers the entire background */
-            color: #333;
-            /* Text color for readability */
-            line-height: 1.6;
-            overflow-y: scroll;
-            /* Allow vertical scrolling */
-        }
-
-        main {
-            background: rgba(255, 255, 255, 0.8);
-            /* Add a semi-transparent white background for readability */
-            padding: 2em;
-            margin: 2em auto;
-            max-width: 800px;
-            /* Center the content and limit its width */
-            border-radius: 10px;
-            /* Optional: Add rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            /* Optional: Add a shadow for better contrast */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
+    <header>
+        <img src="cyca.png" alt="Color Your Chaos Logo"
+            style="width: 100px; height: auto; display: block; margin: 0 auto;">
+        <h1>Color Your Chaos</h1>
+        <nav class="nav-bar">
+            <a href="#welcome">Welcome</a>
+            <a href="#tips">Tips</a>
+            <a href="#resources">Resources</a>
+            <a href="#quotes">Quotes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
     <main>
-        <header>
-            <h1>Color Your Chaos</h1>
-
-        </header>
-        <section id="welcome">
-            <h1>Welcome to Color Your Chaos</h1>
+        <section id="welcome" class="fade-in">
+            <h2>Welcome to Color Your Chaos</h2>
             <p>Chaos is a state of disorder and confusion. But with the right tools, you can color your chaos and bring
                 order to your life. Whether you're dealing with a messy home, a cluttered mind, or a chaotic schedule,
                 we've got you covered.</p>
             <p>Join us on this journey to bring peace to your personal storm.</p>
+            <a href="#contact" class="cta-button">Share Your Story</a>
         </section>
 
-        <section id="tips">
+        <section id="tips" class="fade-in">
             <h2>Daily Tips to Tame the Chaos</h2>
             <ul class="tips-list">
-                <li><strong>Declutter One Thing:</strong> Just one drawer or shelf per day can shift your momentum.</li>
-                <li><strong>Mind Dump:</strong> Journal or brain-dump your thoughts to clear mental clutter.</li>
-                <li><strong>Set a Timer:</strong> Use the Pomodoro technique (25/5 minute blocks) for tasks.</li>
-                <li><strong>Breathe:</strong> Take five deep breaths when you're overwhelmed.</li>
+                <li class="tip-item"><strong>Declutter One Thing:</strong> Just one drawer or shelf per day can shift
+                    your momentum.</li>
+                <li class="tip-item"><strong>Mind Dump:</strong> Journal or brain-dump your thoughts to clear mental
+                    clutter.</li>
+                <li class="tip-item"><strong>Set a Timer:</strong> Use the Pomodoro technique (25/5 minute blocks) for
+                    tasks.</li>
+                <li class="tip-item"><strong>Breathe:</strong> Take five deep breaths when you're overwhelmed.</li>
             </ul>
         </section>
 
-        <section id="resources">
+        <section id="resources" class="fade-in">
             <h2>Helpful Resources</h2>
             <ul class="resources-list">
-                <li><a href="https://www.flylady.net/" target="_blank">FlyLady</a> – Home organization made easy.</li>
-                <li><a href="https://bulletjournal.com/" target="_blank">Bullet Journal</a> – For chaotic minds that
-                    need structure.</li>
-                <li><a href="https://headspace.com" target="_blank">Headspace</a> – Mindfulness for mental chaos.</li>
-                <li><a href="https://al-anon.org" target="_blank">Al-Anon</a> – Support for those living in chaos due to
-                    others.</li>
+                <li class="resource-item"><a href="https://www.flylady.net/" target="_blank">FlyLady</a> – Home
+                    organization made easy.</li>
+                <li class="resource-item"><a href="https://bulletjournal.com/" target="_blank">Bullet Journal</a> – For
+                    chaotic minds that need structure.</li>
+                <li class="resource-item"><a href="https://headspace.com" target="_blank">Headspace</a> – Mindfulness
+                    for mental chaos.</li>
+                <li class="resource-item"><a href="https://al-anon.org" target="_blank">Al-Anon</a> – Support for those
+                    living in chaos due to others.</li>
             </ul>
         </section>
 
-        <section id="quotes">
+        <section id="quotes" class="fade-in">
             <h2>Chaos-Inspired Quotes</h2>
-            <blockquote>“Out of chaos comes order.” — Friedrich Nietzsche</blockquote>
-            <blockquote>“Healing doesn’t mean the damage never existed. It means the damage no longer controls our
-                lives.” — Akshay Dubey</blockquote>
-            <blockquote>“In the midst of chaos, there is also opportunity.” — Sun Tzu</blockquote>
+            <blockquote class="quote-item">“Out of chaos comes order.” — Friedrich Nietzsche</blockquote>
+            <blockquote class="quote-item">“Healing doesn’t mean the damage never existed. It means the damage no longer
+                controls our lives.” — Akshay Dubey</blockquote>
+            <blockquote class="quote-item">“In the midst of chaos, there is also opportunity.” — Sun Tzu</blockquote>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="fade-in">
             <h2>Contact & Share</h2>
             <p>Have a tip, story, or tool that helped you organize your chaos? Send us a message at <a
                     href="mailto:cavinkrenik5@icloud.com">Color Your Chaos</a>.</p>
+            <a href="mailto:cavinkrenik5@icloud.com" class="cta-button">Get in Touch</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Color Your Chaos. All rights reserved.</p>
+        <p>© 2025 Color Your Chaos. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeInElements.forEach(el => observer.observe(el));
+    </script>
 </body>
 
 </html>
