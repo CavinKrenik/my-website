@@ -1,97 +1,111 @@
-/* Reset some default browser styles */
+/* UNIVERSAL SELECTOR */
 * {
+    box-sizing: border-box;
+    color: rgb(8, 57, 84);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body styling */
+/* TYPE SELECTOR */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #fdfdfd;
-    color: #333;
     line-height: 1.7;
-    padding: 20px;
+    padding: 1.25rem; /* Relative unit */
 }
 
-/* Header */
-header {
-    background-color: #fef6e4;
-    padding: 30px 20px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 2rem;
-    color: #6247aa;
-    margin-top: 20px;
-}
-
-/* Main headings */
 h2 {
-    color: #6247aa;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+    color: #663399; /* Updated to hex */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem; /* Relative unit */
+    margin-top: 2.5rem; /* Relative unit */
+    margin-bottom: 1rem; /* Relative unit */
 }
 
-/* Paragraphs */
-p {
-    margin-bottom: 20px;
-    font-size: 1.05rem;
+/* ID SELECTOR */
+#main-title {
+    font-size: 2.25rem; /* Relative unit */
+    color: #008080; /* Updated to hex */
 }
 
-/* Lists */
-ul {
-    margin-left: 20px;
-    margin-bottom: 30px;
+/* CLASS SELECTOR */
+.email-link {
+    font-style: italic;
+    color: #004488; /* Hex code */
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-/* Links */
-a {
-    color: #008080;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Sections */
-section {
-    margin-bottom: 50px;
-}
-
-/* Footer */
-footer {
-    background-color: #fef6e4;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 50px;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-/* Image styling */
-img {
-    max-width: 100%;
+.logo {
+    width: 100%; /* Relative unit */
+    max-width: 31.25rem; /* Updated to relative unit */
     height: auto;
 }
 
-/* Contact & Resources Section */
+/* RELATIONAL SELECTOR */
 section p a {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 0.5rem; /* Relative unit */
+    font-weight: bold;
 }
 
-/* Quotes */
+/* COMBINATION SELECTOR */
 section p:nth-child(odd) {
     font-style: italic;
-    color: #555;
+    color: #555; /* Hex code */
+}
+
+/* PSEUDO-CLASS SELECTOR */
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 100, 100); /* RGB value */
+}
+
+/* HEADER */
+header {
+    background-color: #fef6e4; /* Hex code */
+    padding: 2rem 1.25rem; /* Relative units */
+    border-radius: 1rem; /* Relative unit */
+    margin-bottom: 2.5rem; /* Relative unit */
+    text-align: center;
+}
+
+/* PARAGRAPH STYLING */
+p {
+    margin-bottom: 1.25rem; /* Relative unit */
+    font-size: 1.05rem; /* Relative unit */
+}
+
+/* LISTS */
+ul {
+    margin-left: 1.25rem; /* Relative unit */
+    margin-bottom: 1.875rem; /* Relative unit */
+}
+
+li {
+    margin-bottom: 0.625rem; /* Relative unit */
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 3.125rem; /* Relative unit */
+}
+
+/* FOOTER */
+footer {
+    background-color: #fef6e4; /* Hex code */
+    padding: 1.25rem; /* Relative unit */
+    border-radius: 1rem; /* Relative unit */
+    margin-top: 3.125rem; /* Relative unit */
+    font-size: 0.9rem; /* Relative unit */
+    text-align: center;
+    color: #555; /* Hex code */
+}
+
+footer .tagline {
+    font-style: italic;
+}
+
+/* IMAGE STYLING */
+.x-logo {
+    width: 9.375rem; /* Updated to relative unit */
+    height: auto;
 }
