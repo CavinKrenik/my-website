@@ -1,25 +1,21 @@
-/* UNIVERSAL SELECTOR */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* BODY */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #fdfdfd;
     line-height: 1.7;
     padding: 1.25rem;
-    text-align: center; /* Center general body content */
+    text-align: center;
 }
 
-/* MAIN SECTION */
 main {
-    text-align: left; /* Override global centering for main content */
+    text-align: left; 
 }
 
-/* HEADINGS */
 h2 {
     color: #663399;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,7 +29,6 @@ h2 {
     color: #008080;
 }
 
-/* LINKS */
 a:hover {
     text-decoration: underline;
     color: rgb(0, 100, 100);
@@ -44,7 +39,6 @@ a:hover {
     color: #004488;
 }
 
-/* LOGO IMAGES */
 .logo {
     width: 100%;
     max-width: 31.25rem;
@@ -56,13 +50,11 @@ a:hover {
     height: auto;
 }
 
-/* PARAGRAPH STYLING */
 p {
     margin-bottom: 1.25rem;
     font-size: 1.05rem;
 }
 
-/* LISTS */
 ul {
     margin-left: 1.25rem;
     margin-bottom: 1.875rem;
@@ -72,7 +64,6 @@ li {
     margin-bottom: 0.625rem;
 }
 
-/* CLASS TO LEFT-ALIGN BULLETED LISTS AND SHOW BULLETS PROPERLY */
 .left-align-list {
     text-align: left;
     list-style-position: outside;
@@ -85,12 +76,10 @@ li {
     list-style-type: disc;
 }
 
-/* SECTION STYLING */
 section {
     margin-bottom: 3.125rem;
 }
 
-/* HEADER */
 header {
     background-color: #fef6e4;
     padding: 2rem 1.25rem;
@@ -99,7 +88,6 @@ header {
     text-align: center;
 }
 
-/* FOOTER */
 footer {
     background-color: #fef6e4;
     padding: 1.25rem;
@@ -114,13 +102,11 @@ footer .tagline {
     font-style: italic;
 }
 
-/* COMBINATION SELECTOR */
 section p:nth-child(odd) {
     font-style: italic;
     color: #555;
 }
 
-/* RELATIONAL SELECTOR */
 section p a {
     display: inline-block;
     margin-top: 0.5rem;
