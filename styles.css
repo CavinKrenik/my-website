@@ -1,3 +1,4 @@
+/* UNIVERSAL STYLES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,77 +10,10 @@ body {
     background-color: #fdfdfd;
     line-height: 1.7;
     padding: 1.25rem;
-    text-align: center;
+    text-align: center; /* Center everything by default */
 }
 
-main {
-    text-align: left; 
-}
-
-h2 {
-    color: #663399;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.8rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#main-title {
-    font-size: 2.25rem;
-    color: #008080;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: rgb(0, 100, 100);
-}
-
-.email-link {
-    font-style: italic;
-    color: #004488;
-}
-
-.logo {
-    width: 100%;
-    max-width: 31.25rem;
-    height: auto;
-}
-
-.x-logo {
-    width: 9.375rem;
-    height: auto;
-}
-
-p {
-    margin-bottom: 1.25rem;
-    font-size: 1.05rem;
-}
-
-ul {
-    margin-left: 1.25rem;
-    margin-bottom: 1.875rem;
-}
-
-li {
-    margin-bottom: 0.625rem;
-}
-
-.left-align-list {
-    text-align: left;
-    list-style-position: outside;
-    margin-left: 2rem;
-    padding-left: 1rem;
-}
-
-.left-align-list li {
-    display: list-item;
-    list-style-type: disc;
-}
-
-section {
-    margin-bottom: 3.125rem;
-}
-
+/* HEADER AND FOOTER */
 header {
     background-color: #fef6e4;
     padding: 2rem 1.25rem;
@@ -102,6 +36,80 @@ footer .tagline {
     font-style: italic;
 }
 
+/* MAIN CONTENT */
+main {
+    text-align: left; /* Keep main content left-aligned */
+}
+
+section {
+    margin-bottom: 3.125rem;
+}
+
+h2 {
+    color: #663399;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Center headings */
+}
+
+#main-title {
+    font-size: 2.25rem;
+    color: #008080;
+}
+
+/* LINKS */
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 100, 100);
+}
+
+.email-link {
+    font-style: italic;
+    color: #004488;
+}
+
+/* IMAGES */
+.logo {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+}
+
+.x-logo {
+    width: 9.375rem;
+    height: auto;
+}
+
+/* TEXT AND LISTS */
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+}
+
+ul {
+    margin-left: 1.25rem;
+    margin-bottom: 1.875rem;
+}
+
+li {
+    margin-bottom: 0.625rem;
+}
+
+.left-align-list {
+    text-align: left; /* Keep specific lists left-aligned */
+    list-style-position: outside;
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.left-align-list li {
+    display: list-item;
+    list-style-type: disc;
+}
+
+/* STYLING FOR ODD PARAGRAPHS */
 section p:nth-child(odd) {
     font-style: italic;
     color: #555;
