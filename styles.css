@@ -36,6 +36,39 @@ footer .tagline {
     font-style: italic;
 }
 
+/* NAVIGATION BAR */
+nav {
+    background-color: #fef6e4;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #663399;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #008080;
+}
+
 /* MAIN CONTENT */
 main {
     text-align: left; /* Keep main content left-aligned */
@@ -70,6 +103,12 @@ a:hover {
     color: #004488;
 }
 
+/* HOVER EFFECT FOR MAILTO LINKS */
+a[href^="mailto:"]:hover {
+    color: orange; /* Change text color to orange on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
 /* IMAGES */
 .logo {
     width: 100%;
@@ -80,6 +119,13 @@ a:hover {
 .x-logo {
     width: 9.375rem;
     height: auto;
+}
+
+/* HEADER LOGO */
+.header-logo {
+    width: 100%; /* Make the image span the full width of the page */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
 }
 
 /* TEXT AND LISTS */

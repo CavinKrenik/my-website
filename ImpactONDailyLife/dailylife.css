@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.7;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: #fef6e4;
+    padding: 2rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 31.25rem; /* 500px */
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    color: #663399;
+    margin-bottom: 1rem;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    background-color: #fef6e4;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #663399;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f0e6ff;
+    color: #333;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* SECTION STYLES */
+section {
+    margin-bottom: 3.125rem;
+    padding: 1.25rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADINGS */
+h2 {
+    color: #663399;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* LISTS */
+ul {
+    margin-left: 2rem;
+    margin-bottom: 1.875rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+/* EMAIL LINK */
+.email-link {
+    font-style: italic;
+    color: #004488;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fef6e4;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    text-align: cent
+}
