@@ -36,7 +36,7 @@ footer .tagline {
     width: 100%; /* Make the banner span the full width of the page */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove inline spacing */
-    margin-bottom: 1rem; /* Add spacing below the banner */
+    margin-bottom: 0.5rem; /* Add spacing below the banner */
 }
 
 /* NAVIGATION BAR */
@@ -44,7 +44,7 @@ nav {
     background-color: #fef6e4; /* Light background for the nav bar */
     padding: 1rem;
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.2rem;
     text-align: center;
 }
 
