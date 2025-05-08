@@ -1,7 +1,6 @@
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: url('../images/bkg.jpeg') no-repeat center center fixed; /* Add background image */
+    background: url('images/bkg.jpeg') no-repeat center center fixed; /* Corrected path */
     background-size: cover; /* Ensure the image covers the entire page */
     color: #f2dfdf;
     line-height: 1.7;
@@ -33,8 +32,6 @@ footer .tagline {
 }
 
 /* NAVIGATION BAR */
-
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -96,7 +93,7 @@ a:hover {
 }
 
 /* Email Link Styling */
-.email-link {
+.email-link { /* This rule is duplicated, but keeping it as it was in original */
     color: #64ec20; /* Bright green for visibility */
     font-weight: bold;
     text-decoration: none;
