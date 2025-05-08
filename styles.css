@@ -31,7 +31,23 @@ footer .tagline {
     font-style: italic;
 }
 
-/* NAV BAR */
+/* HEADER BANNER */
+.header-banner {
+    width: 100%; /* Make the banner span the full width of the page */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    margin-bottom: 1rem; /* Add spacing below the banner */
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #fef6e4; /* Light background for the nav bar */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -47,14 +63,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #f7ba05;
+    color: #663399; /* Purple text for links */
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
-    color: #008080;
+    color: #008080; /* Teal color on hover */
 }
 
 .intro-text {
