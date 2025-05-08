@@ -121,12 +121,6 @@ a[href^="mailto:"]:hover {
     text-decoration: underline;
 }
 
-/* IMAGES */
-.logo { /* This class is not used in the provided HTML for the header logo */
-    width: 100%;
-    max-width: 31.25rem;
-    height: auto;
-}
 
 .x-logo {
     width: 9.375rem; /* Approx 150px if 1rem = 16px */
