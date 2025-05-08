@@ -176,11 +176,6 @@ li {
     padding-left: 1rem;
 }
 
-.left-align-list { /* This class is used for the main content lists */
-    /* margin-left: 1.25rem; /* Let specific contexts (like .black-box ul) handle this if needed */
-    /* padding-left: 0; /* If using list-style-position: inside, this might be desired */
-}
-
 .left-align-list li {
     display: list-item; /* Ensures it behaves as a list item */
     list-style-type: disc; /* Default bullet style */
