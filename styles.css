@@ -7,15 +7,17 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #fdfdfd;
+    background: url('../images/bkg.jpeg') no-repeat center center fixed; /* Add background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    color: #f2dfdf;
     line-height: 1.7;
     padding: 1.25rem;
-    text-align: center; /* Center everything by default */
+    text-align: center; /* Center block elements like header, footer, main (if main has margin auto and a width) */
 }
 
 /* HEADER AND FOOTER */
 header {
-    background-color: #fef6e4;
+    background-color: #070604;
     padding: 2rem 1.25rem;
     border-radius: 1rem;
     margin-bottom: 2.5rem;
@@ -23,13 +25,13 @@ header {
 }
 
 footer {
-    background-color: #fef6e4;
+    background-color: #0d0d0c;
     padding: 1.25rem;
     border-radius: 1rem;
     margin-top: 3.125rem;
     font-size: 0.9rem;
     text-align: center;
-    color: #555;
+    color: #f1eaea;
 }
 
 footer .tagline {
@@ -38,9 +40,10 @@ footer .tagline {
 
 /* NAVIGATION BAR */
 nav {
-    background-color: #fef6e4;
+    background-color: #149a9a; /* Assuming nav is inside header, this might be redundant if header already has this bg */
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem; /* Added some space above the nav if it's distinct from h1 */
+    margin-bottom: 0; /* Header already has margin-bottom */
     border-radius: 0.5rem;
 }
 
@@ -59,7 +62,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #663399;
+    color: #f7ba05;
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -71,7 +74,12 @@ nav ul li a:hover {
 
 /* MAIN CONTENT */
 main {
-    text-align: left; /* Keep main content left-aligned */
+    text-align: left; /* Default alignment for content within main */
+}
+
+.intro-text {
+    text-align: center; /* Center the introductory h2 and p tags */
+    margin-bottom: 2rem; /* Add some space after the intro */
 }
 
 section {
@@ -79,15 +87,15 @@ section {
 }
 
 h2 {
-    color: #663399;
+    color: #bafa39;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.8rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
-    text-align: center; /* Center headings */
+    text-align: center; /* Center all h2 headings by default */
 }
 
-#main-title {
+#main-title { /* This ID is not used in the provided HTML, but style is here if needed */
     font-size: 2.25rem;
     color: #008080;
 }
@@ -95,37 +103,53 @@ h2 {
 /* LINKS */
 a:hover {
     text-decoration: underline;
-    color: rgb(0, 100, 100);
+    color: rgb(227, 238, 238);
 }
 
 .email-link {
     font-style: italic;
-    color: #004488;
+    color: #64ec20;
+}
+
+/* Email Link Styling */
+.email-link {
+    color: #64ec20; /* Bright green for visibility */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: orange; /* Change to orange on hover */
+    text-decoration: underline;
 }
 
 /* HOVER EFFECT FOR MAILTO LINKS */
 a[href^="mailto:"]:hover {
-    color: orange; /* Change text color to orange on hover */
-    text-decoration: underline; /* Optional: Add underline on hover */
+    color: orange;
+    text-decoration: underline;
 }
 
 /* IMAGES */
-.logo {
+.logo { /* This class is not used in the provided HTML for the header logo */
     width: 100%;
     max-width: 31.25rem;
     height: auto;
 }
 
 .x-logo {
-    width: 9.375rem;
+    width: 9.375rem; /* Approx 150px if 1rem = 16px */
     height: auto;
 }
 
 /* HEADER LOGO */
 .header-logo {
-    width: 100%; /* Make the image span the full width of the page */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any inline spacing */
+    width: 100%;
+    max-width: 25rem; /* Example: constrain max width of logo, adjust as needed */
+    height: auto;
+    display: block;
+    margin-left: auto; /* Center the logo if it's smaller than max-width */
+    margin-right: auto; /* Center the logo */
+    margin-bottom: 1rem; /* Space below logo */
 }
 
 /* TEXT AND LISTS */
@@ -134,8 +158,8 @@ p {
     font-size: 1.05rem;
 }
 
-ul {
-    margin-left: 1.25rem;
+ul { /* General ul styling */
+    margin-left: 1.25rem; /* Default indentation for lists not specifically styled */
     margin-bottom: 1.875rem;
 }
 
@@ -143,26 +167,73 @@ li {
     margin-bottom: 0.625rem;
 }
 
-.left-align-list {
-    text-align: left; /* Keep specific lists left-aligned */
+/* This class seems to have a typo in its name in original CSS (right-align-right but does text-align: left) */
+/* Assuming it's for generic left-aligned lists if needed outside .left-align-list */
+.custom-left-aligned-list {
+    text-align: left;
     list-style-position: outside;
-    margin-left: 2rem;
+    margin-left: 2rem; /* Overrides general ul margin-left */
     padding-left: 1rem;
 }
 
+.left-align-list { /* This class is used for the main content lists */
+    /* margin-left: 1.25rem; /* Let specific contexts (like .black-box ul) handle this if needed */
+    /* padding-left: 0; /* If using list-style-position: inside, this might be desired */
+}
+
 .left-align-list li {
-    display: list-item;
-    list-style-type: disc;
+    display: list-item; /* Ensures it behaves as a list item */
+    list-style-type: disc; /* Default bullet style */
+    /* text-align: left; /* Ensure list item text is left aligned */
 }
 
 /* STYLING FOR ODD PARAGRAPHS */
-section p:nth-child(odd) {
+section p:nth-child(odd) { /* This will make the text content italic and change color for odd <p> tags within any <section> */
     font-style: italic;
-    color: #555;
+    color: #ede6eb;
 }
 
-section p a {
+section p a { /* Style for <a> tags that are children of <p> tags within <section> */
     display: inline-block;
     margin-top: 0.5rem;
     font-weight: bold;
+}
+
+/* Black Box Section */
+.black-box {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 1.5rem; /* Add padding inside the box */
+    border-radius: 0.5rem; /* Rounded corners */
+    margin: 2rem auto; /* Center the box horizontally and add vertical spacing */
+    max-width: 800px; /* Set a maximum width for the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    text-align: center; /* Center-align the text inside the box */
+}
+
+.black-box h2 {
+    color: #fff; /* White heading text */
+    margin-top: 0.25rem; /* Add a little top margin */
+    margin-bottom: 0.5rem; /* Reduced space below the heading */
+    padding-left: 0.25rem; /* Ensure heading text isn't touching left edge */
+    padding-right: 0.25rem; /* Ensure heading text isn't touching right edge */
+}
+
+.black-box ul.left-align-list {
+    display: inline-block;
+    text-align: left; /* Align list items to the left */
+    list-style-type: disc; /* Use bullets */
+    list-style-position: inside; /* Place bullets inside the box */
+    margin: 0;
+    padding: 0 0.25rem 0.25rem 0.25rem; /* Add padding around the list */
+}
+
+.black-box ul.left-align-list li {
+    color: #fff; /* White text for list items */
+    margin-bottom: 0.75rem; /* Add spacing between list items */
+}
+
+.black-box p {
+    margin-bottom: 1rem; /* Add spacing between paragraphs */
+    text-align: justify; /* Justify text for better readability */
 }

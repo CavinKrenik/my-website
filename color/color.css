@@ -1,0 +1,94 @@
+/* HEADER STYLES */
+header {
+    background-color: #fef6e4;
+    padding: 2rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/* HEADER LOGO */
+.header-logo {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #fef6e4;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #663399;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #008080;
+}
+
+/* COLOR ASSOCIATION TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+}
+
+thead {
+    background-color: #444;
+    color: #fff;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+tr[style] {
+    background: var(--color);
+    color: #fff;
+}
+
+tr[style*="white"] {
+    color: #000;
+}
+
+tr[style*="linear-gradient"] td {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    color: #fff;
+}
