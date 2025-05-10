@@ -1,143 +1,142 @@
+/* ===== Reset & Base ===== */
+* {
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #fdfdfd;
-    color: #333;
-    line-height: 1.7;
-    padding: 1.25rem;
-    text-align: center;
+  width: 90%;
+  margin: 15px auto;
+  padding: 1.25rem;
+  background-color: white;
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.7;
+  text-align: center;
 }
 
-/* HEADER STYLES */
+/* ===== Header ===== */
 header {
-    background-color: #fef6e4;
-    padding: 2rem 1.25rem;
-    border-radius: 1rem;
-    margin-bottom: 2.5rem;
-    text-align: center;
+  background-color: #fef6e4;
+  padding: 2rem 1.25rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* HEADER LOGO */
-.header-logo,
-.logo {
-    width: 100%;
-    max-width: 31.25rem;
-    height: auto;
+header .logo {
+  width: 100%;
+  max-width: 31.25rem;
+  height: auto;
 }
 
-/* HEADER TITLE */
 header h1 {
-    font-size: 2rem;
-    color: #663399;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #663399;
+  margin-bottom: 1rem;
 }
 
-/* NAVIGATION BAR */
 nav {
-    background-color: #fef6e4;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 0.5rem;
+  background-color: #fef6e4;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-    display: inline;
+nav a {
+  text-decoration: none;
+  color: #663399;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #663399;
-    font-weight: bold;
-    font-size: 1.1rem;
+nav a:hover {
+  text-decoration: underline;
+  color: #008080;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #008080;
-}
-
-/* MAIN CONTENT */
+/* ===== Main Grid ===== */
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: left;
+  float: left;
+  width: 66%;
+  padding: 1rem;
+  border-right: 2px solid #ef9c00;
+  max-width: 900px;
+  text-align: left;
 }
 
-/* SECTION & LIST STYLES */
-section {
-    margin-bottom: 3.125rem;
-    padding: 1.25rem;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-/* HEADINGS */
-h2 {
-    color: #663399;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+.grid-item {
+  background-color: #fef6e4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* PARAGRAPH STYLES */
-p {
-    margin-bottom: 1.25rem;
-    font-size: 1.05rem;
-    text-align: justify;
+.grid-item h2 {
+  margin-top: 0;
+  color: #663399;
+  text-align: center;
 }
 
-/* LIST STYLES */
-ul {
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
-    list-style-type: disc;
+.grid-item ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
 }
 
-li {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
+.grid-item ul li,
+.grid-item p {
+  margin-bottom: 0.75rem;
+  color: #333;
 }
 
-/* FOOTER STYLES */
+.grid-item p {
+  text-align: justify;
+  font-size: 1.05rem;
+}
+
+/* ===== Aside ===== */
+aside {
+  float: right;
+  width: 33%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-left: 2px solid #ef9c00;
+}
+
+/* center the image in the sidebar */
+.fOFc-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* ===== Footer ===== */
 footer {
-    background-color: #fef6e4;
-    padding: 1.25rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
+  clear: both;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #ef9c00;
+  color: white;
 }
 
 footer .tagline {
-    font-style: italic;
-    color: #663399;
-}
-
-/* LINKS */
-a:hover {
-    text-decoration: underline;
-    color: rgb(0, 100, 100);
-}
-
-.email-link {
-    font-style: italic;
-    color: #004488;
-}
-
-a[href^="mailto:"]:hover {
-    color: orange;
-    text-decoration: underline;
+  font-style: italic;
 }

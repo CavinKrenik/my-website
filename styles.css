@@ -220,3 +220,17 @@ section p a { /* Style for <a> tags that are children of <p> tags within <sectio
     margin-bottom: 1rem; /* Add spacing between paragraphs */
     text-align: justify; /* Justify text for better readability */
 }
+
+/* App Icon Section */
+.app-icon {
+    width: 150px; /* Set the width of the app icon */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 1rem auto; /* Center the image and add spacing */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.app-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
