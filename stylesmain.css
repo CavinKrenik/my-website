@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 3rem; /* Large font size for the header */
+    margin: 2rem 0;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #663399; /* Purple color for the link */
+    transition: color 0.3s ease;
+}
+
+.header-link:hover {
+    color: #008080; /* Teal color on hover */
+}
+
+/* Video Button Styles */
+.video-button {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.intro-video {
+    width: 100%; /* Make the video span the full width */
+    max-width: 900px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 1rem; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.intro-video:hover {
+    transform: scale(1.1); /* Slightly enlarge the video on hover */
+}
+
+/* Intro GIF Styles */
+.intro-gif {
+    width: 100%; /* Make the GIF span the full width of the page */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    margin: 0 auto; /* Center the GIF */
+}

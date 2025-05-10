@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #fdfdfd;
@@ -122,11 +121,23 @@ li {
     text-decoration: underline;
 }
 
-/* FOOTER */
+/* Footer Styles */
 footer {
-    background-color: #fef6e4;
-    padding: 1.25rem;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    text-align: cent
+    background-color: #e7a409; /* Light background color */
+    padding: 1.25rem; /* Add padding inside the footer */
+    border-radius: 1rem; /* Rounded corners */
+    margin-top: 2rem; /* Add spacing above the footer */
+    text-align: center; /* Center-align the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555; /* Subtle text color */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+footer .tagline {
+    font-style: italic; /* Italicize the tagline */
+    color: #663399; /* Purple color for the tagline */
+    margin-top: 0.5rem; /* Add spacing above the tagline */
 }

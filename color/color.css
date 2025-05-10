@@ -92,3 +92,19 @@ tr[style*="linear-gradient"] td {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     color: #fff;
 }
+
+/* Footer Styles */
+footer {
+    background-color: #e6a612; /* Light background color */
+    padding: 1.25rem; /* Add padding inside the footer */
+    border-radius: 1rem; /* Rounded corners */
+    margin-top: 2rem; /* Add spacing above the footer */
+    text-align: center; /* Center-align the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555; /* Subtle text color */
+}
+
+footer .tagline {
+    font-style: italic; /* Italicize the tagline */
+    color: #663399; /* Purple color for the tagline */
+}
